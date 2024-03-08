@@ -1,0 +1,12 @@
+.code
+	addi r7, 8
+	mov r3, r7
+	addi r8, 1
+	out r8, r3
+; print 8
+	mov r4, 8
+	out r8, r4
+; print 8
+	halt
+; end
+

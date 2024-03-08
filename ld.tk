@@ -1,0 +1,7 @@
+.code
+	ld r5, 9
+	addi r3, 1
+	out r3, r5
+	halt
+; the output is 9
+

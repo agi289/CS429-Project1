@@ -1,0 +1,26 @@
+.code
+	addi r2, 100
+	shftri r2, 2
+; print 25
+	addi r8, 1
+	out r8, r2
+	shftli r2, 2
+	out r8, r2
+; print 100
+	addi r3, 5
+	shftl r7, r2, r3
+	addi r10, 1
+	out r10, r7
+; print 32000
+	shftr r7, r2, r3
+	out r10, r7
+; print 3
+	addi r11, 4
+	brr 4
+	brr r11
+; simply moves on 8
+	brnz r11, r7
+; address will be 56 (checked internally)
+; Will print a simulation error statement
+	halt
+; end

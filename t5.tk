@@ -1,0 +1,11 @@
+.code
+	clr r31
+	addi r31, 4
+	add r31, r31, r31
+	pop r4
+	push r4
+	addi r10, 1
+	out r10, r31
+	halt
+; This program should print 8.
+; end of the program

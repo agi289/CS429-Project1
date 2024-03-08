@@ -1,0 +1,17 @@
+.code
+	addi r5, 5
+	addi r9, 9
+	and r3, r5, r9
+	addi r8, 1
+	out r8, r3
+; the program should print 1
+	or r3, r5, r9
+	out r8, r3
+; the program should print 13
+	xor r3, r5, r9
+	out r8, r3
+; the program should print 12
+	not r3, r5
+	out r8, r3
+	halt
+; the program should print 18446744073709551610.

@@ -1,0 +1,16 @@
+.code
+; print 1
+	addi r13, 8
+	addi r4, 4
+	addf r8, r13, r4
+	addi r10, 1
+	out r10, r8
+; print 12
+	mulf r8, r13, r4
+	out r10, r8
+; print 32
+	divf r8, r8, r4
+	out r10, r8
+; print 8
+	halt
+; end

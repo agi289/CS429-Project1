@@ -1,0 +1,13 @@
+.code
+	addi r4, 12
+	addi r7, 8
+	call r4, r9, r10
+	subi r7, 3
+	addi r8, 1
+	out r8, r7
+; print 5 since call moves to next
+	halt
+	return
+	brgt r8, r7, r9
+; halts before return and brgt do an infinite loop
+

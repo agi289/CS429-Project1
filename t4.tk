@@ -1,0 +1,8 @@
+.code
+	addi r4, 0
+	in r4, r3
+	addi r8, 1
+	out r8, r4
+	halt
+; This program should print whatever you type in (I typed 7).
+; end of the program

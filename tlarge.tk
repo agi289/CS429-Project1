@@ -1,0 +1,10 @@
+.code
+	addi r31, 2048
+	addi r14, 2048
+	addf r2, r31, r14
+; subf r2, r2, r14
+	addi r10, 1
+	out r10, r2
+	halt
+; This program should print 4096.
+; end of the program
